@@ -1,6 +1,6 @@
 ### General info
 
-A simple circular clock that tells you the current time
+An analog clock and a digital clock showing you the current time.
 
 ### To view
 
