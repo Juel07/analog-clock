@@ -19,6 +19,10 @@ const displayTime = () => {
     const hoursDegree = (360 * hours) / 60
 
     // display time on digital clock
+    if (hours <= 0) { hours = '0' + hours } else { hours }
+    if (secs < 10) { secs = '0' + secs } else { secs }
+    if (mins < 10) { mins = '0' + mins } else { mins }
+
     digitalTime.innerText = `${hours}:${mins}:${secs}`
 }
 
