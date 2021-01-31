@@ -8,7 +8,7 @@ Link to project: https://juel07.github.io/analog-clock/
 
 ### Demo
 
-![website demo](website-demo.gif)
+<img src= "demo-screenshot.PNG"></img>
 
 ### Technologies
 
