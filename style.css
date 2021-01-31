@@ -11,47 +11,38 @@
   box-sizing: border-box;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
-
 body {
   background-color: #1d1d1d;
   padding: 5em 0;
 }
-
 body, section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-
 h1, h3, p {
   text-align: center;
   color: #f0f0f0;
   opacity: 0.9;
 }
-
 h1 {
   font: bold 80px/120% Arial, "Helvetica", sans-serif;
 }
-
 h3 {
   text-transform: uppercase;
   font: bold 34px/120% Georgia, serif;
 }
-
 p {
   font: 400 16px/120% "Rubik", sans-serif;
   padding: 0.3em 1em;
 }
-
 section {
   margin-top: 2em;
 }
-
 .clock-container {
   padding: 0 2em;
 }
-
 .clock {
   position: relative;
   background-color: #f0f0f0;
@@ -60,7 +51,6 @@ section {
   height: 17em;
   width: 17em;
 }
-
 .hand {
   position: absolute;
   background: #1d1d1d;
@@ -69,29 +59,24 @@ section {
   bottom: 50%;
   transform-origin: bottom center; /* !important */
 }
-
 .hour {
   height: 30%;
   width: 0.3em;
 }
-
 .min {
   height: 37%;
   width: 0.3em;
 }
-
 .sec {
   height: 41%;
   width: 0.2em;
   background-color: #b44848;
 }
-
 .num-time {
   color: #f0f0f0;
   letter-spacing: 1px;
   font: 400 18px/120% "Share Tech Mono", monospace;
 }
-
 .center-dot {
   position: absolute;
   left: 50%;
@@ -108,25 +93,20 @@ section {
   h3 {
     font-size: 24px;
   }
-
   p {
     font-size: 14px;
     padding: 0.3em 1em;
   }
-
   .clock-container {
     padding: 0 1em;
   }
-
   .clock {
     height: 13em;
     width: 13em;
   }
-
   .num-time {
     font-size:  16px;
   }
-  
   .center-dot {
     margin-top: -115px;
   }
