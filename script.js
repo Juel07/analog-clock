@@ -13,12 +13,17 @@ const displayTime = () => {
     let mins = time.getMinutes()
     let secs = time.getSeconds()
 
-    // convert the time to a degree
-    const secsDegree = (360 * secs) / 60
-    const minsDegree = (360 * mins) / 60
-    const hoursDegree = (360 * hours) / 60
+    // determine ratio for each unit of time
+    const secsRatio = secs / 60
+    const minsRatio = (secsRatio + mins) / 60   //add secsRatio so that the minute hands rotates gradually
+    const hoursRatio = (minsRatio + hours) / 12 //add minsRatio so that the hour hands rotates gradually
 
-    // make the hands rotate as per degree position 
+    // convert the time to a degree
+    const secsDegree = secsRatio * 360
+    const minsDegree = minsRatio * 360
+    const hoursDegree = hoursRatio * 360
+
+    // make the hands rotate as per degree position
     hourHand.style.transform = `rotate(${hoursDegree}deg)`
     minHand.style.transform = `rotate(${minsDegree}deg)`
     secHand.style.transform = `rotate(${secsDegree}deg)`
